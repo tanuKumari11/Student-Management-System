@@ -1,0 +1,333 @@
+<div class="container-fluid dashboard">
+  <div class="row">
+    <div class="col-sm-auto bg-light sticky-top">
+      <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center">
+        <a routerLink="/dashboard" title data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-original-title="Icon-only">
+          <img src="https://images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg"
+            height="60px" width="60px" class="rounded-circle mt-3">
+          <span style="color: black; font-weight: 600; font-size: 27px; top: 14px; left: 12px; position: relative;">
+            {{User}} </span>
+        </a>
+        <ul
+          class="nav nav-pills nav-flush flex-sm-column mt-5 flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
+          <li class="nav-item">
+            <a routerLink="/dashboard" style="color: grey;" title data-bs-toggle="tooltip" data-bs-placement="right"
+              data-bs-original-title="Home">
+              <i class="bi-house fs-3"></i>&nbsp; Dashboard
+            </a>
+          </li>
+          <li>
+            <a routerLink="/addStudent" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Dashboard">
+              <i class="bi bi-person-plus fs-3"></i>&nbsp;Add Student
+            </a>
+          </li>
+          <li>
+            <a routerLink="/studentList" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Customers">
+              <i class="bi-people fs-3"></i>&nbsp;Student List
+            </a>
+          </li>
+        
+          <li>
+            <a routerLink="#" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Customers">
+              <i class="bi-journal-text fs-3"></i>&nbsp;Add Courses
+            </a>
+          </li>
+          <li>
+            <a routerLink="/addMark" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Orders" data-bs-original-title="addMark">
+              <i class="bi bi-cloud-plus fs-3"></i> &nbsp;Add Marks
+            </a>
+          </li>
+          <li>
+            <a routerLink="" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Customers">
+              <i class="bi-file-earmark-post fs-3"></i>&nbsp;Add Post
+            </a>
+          </li>
+          <li>
+            <a routerLink="#" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Customers">
+              <i class="bi bi-clipboard fs-3"></i>&nbsp;Notice
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="https://i.imgur.com/hczKIze.jpg" width="40" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#" (click)="OnUserLogout()">Log out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm p-3 min-vh-100">
+      <section>
+        <div class="row">
+          <div class="col-xl-3 col-sm-6 col-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between px-md-1">
+                  <div class="align-self-center">
+                    <i class="bi bi-pencil-fill text-info fa-3x"></i>
+                  </div>
+                  <div class="text-end">
+                    <h3>0</h3>
+                    <p class="mb-0">New Posts</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between px-md-1">
+                  <div class="align-self-center">
+                    <i class="bi bi-megaphone-fill text-warning fa-3x"></i>
+                  </div>
+                  <div class="text-end">
+                    <h3>0</h3>
+                    <p class="mb-0">New Announcements</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between px-md-1">
+                  <div class="align-self-center">
+                    <i class="bi bi-person-fill text-success fa-3x"></i>
+                  </div>
+                  <div class="text-end">
+                    <h3>2</h3>
+                    <p class="mb-0">Students</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between px-md-1">
+                  <div class="align-self-center">
+                    <i class="bi bi-book-fill text-danger fa-3x"></i>
+                  </div>
+                  <div class="text-end">
+                    <h3>43</h3>
+                    <p class="mb-0">Active Homeworks</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Best Student content -->
+      <h3 class="Welcome move">Welcome to Student management system</h3>
+
+      <div class="container mt-3 mb-4 overflow-auto">
+        <div class="row">
+          <div class="col-sm-9 mt-4 mt-lg-0">
+            <div class="row">
+              <div class="user-dashboard-info-box table-responsive mb-0 bg-white p-4 shadow-sm rounded-7">
+                <h4 class="fw-bold text-center">Pending Fees</h4>
+                <table class="table manage-students-top mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-center"><b>S.No</b></th>
+                      <th class="text-center"><b>Roll number</b></th>
+                      <th class="text-center"><b>Student Name</b></th>
+                      <th class="text-center"><b>Phone Number</b></th>
+                      <th class="text-center"><b>Email</b></th>
+                      <th class="text-center"><b>Amount</b></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="students-list">
+                      <td class="text-center">1.</td>
+                      <td class="text-center">12345</td>
+                      <td class="text-center">Tanu Kumari</td>
+                      <td class="text-center">1234567890</td>
+                      <td class="text-center">tk12@gmai</td>
+                      <td class="text-center">45300</td>
+                    </tr>
+                    <tr class="students-list">
+                      <td class="text-center">2.</td>
+                      <td class="text-center">7844</td>
+                      <td class="text-center">Tanu Kumari</td>
+                      <td class="text-center">1234567890</td>
+                      <td class="text-center">tk12@gmai</td>
+                      <td class="text-center">58444</td>
+                    </tr>
+                    <tr class="students-list">
+                      <td class="text-center">3.</td>
+                      <td class="text-center">12345</td>
+                      <td class="text-center">Anish</td>
+                      <td class="text-center">0987654323</td>
+                      <td class="text-center">anhdhd@gmai</td>
+                      <td class="text-center">85214</td>
+                    </tr>
+                    <!-- More rows here -->
+                  </tbody>
+                </table>
+                <div class="row g-0 align-items-center pb-4 my-3">
+                  <div class="col-sm-6">
+                    <div>
+                      <p class="mb-sm-0">Showing 1 to 3</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="float-sm-end">
+                      <ul class="pagination mb-sm-0">
+                        <li class="page-item disabled">
+                          <a href="#" class="page-link"><i class="mdi mdi-chevron-left"></i></a>
+                        </li>
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item">
+                          <a href="#" class="page-link"><i class="mdi mdi-chevron-right"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="d-flex flex-row-reverse">
+              <div class="card bg-glass d-flex " style="width: 331px;">
+                <div class="card-body">
+                  <div class="text-center">
+                    <p class="text-center h2 fw-bold ">News Letter</p>
+                  </div>
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">23-year-old from Assam cracks UPSC on
+                      first attempt without coaching </a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Jharkhand Board
+                      Class 10 Result 2024 to be out tomorrow</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Jharkhand JAC
+                      Class 10 Result 2024 declared. Check direct link here</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">Education
+                      ministry appoints new directors in six IITs</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Punjab Board Class
+                      10 Result 2024 link now active on official website</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">New hope for
+                      unsuccessful UPSC aspirants, insurtech firm offers jobs</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Case study:
+                      Balancing JEE preparations with sports and extra-curriculars</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Punjab Board Class
+                      10 Result 2024 link now active on official website</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">Education
+                      ministry appoints new directors in six IITs</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-9 mt-4 mt-lg-0">
+            <div class="row" style="    position: relative;
+            top: -104.5%;">
+              <div class="card bg-glass d-flex " style="width: 100%;">
+                <div class="card-body">
+                  <div class="text-center">
+                    <h4 class="text-center h2 fw-bold">Quarterly Results</h4>
+                  </div>
+                  <table id="q-graph">
+                    <caption>Quarterly Results</caption>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th class="sent">Passed</th>
+                        <th class="paid">Failed</th>
+                       
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="qtr" id="q1">
+                        <th scope="row">Q1</th>
+                        <td class="sent bar" style="height: 297px;">
+                          <p>98%</p>
+                        </td>
+                        <td class="paid bar" style="height: 10px;">
+                          <p>2%</p>
+                        </td>
+                      </tr>
+                      <tr class="qtr" id="q2">
+                        <th scope="row">Q2</th>
+                        <td class="sent bar" style="height: 270px;">
+                          <p>90%</p>
+                        </td>
+                        <td class="paid bar" style="height: 40px;">
+                          <p>10%</p>
+                        </td>
+                      </tr>
+                      <tr class="qtr" id="q3">
+                        <th scope="row">Q3</th>
+                        <td class="sent bar" style="height: 300px;">
+                          <p>99%</p>
+                        </td>
+                        <td class="paid bar" style="height: 5px;">
+                          <p>1%</p>
+                        </td>
+                      </tr>
+                      <tr class="qtr" id="q4">
+                        <th scope="row">Q4</th>
+                        <td class="sent bar" style="height: 250px;">
+                          <p>85%</p>
+                        </td>
+                        <td class="paid bar" style="height: 45px;">
+                          <p>15%</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div id="ticks">
+                    <div class="tick" style="height: 59px;">
+                      <p>100%</p>
+                    </div>
+                    <div class="tick" style="height: 59px;">
+                      <p>80%</p>
+                    </div>
+                    <div class="tick" style="height: 59px;">
+                      <p>60%</p>
+                    </div>
+                    <div class="tick" style="height: 59px;">
+                      <p>40%</p>
+                    </div>
+                    <div class="tick" style="height: 59px;">
+                      <p>20%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container text-center">
+          <span class="text-muted">© 2024 Student management System By Tanu Kumari</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+      
+      

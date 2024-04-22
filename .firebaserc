@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "student-management-syste-c3b5e": {
+      "hosting": {
+        "Student-Management": [
+          "student-management-syste-c3b5e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "student-management-syste-c3b5e"
+  }
+}
