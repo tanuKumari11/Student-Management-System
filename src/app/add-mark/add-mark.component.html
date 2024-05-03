@@ -1,71 +1,73 @@
-<div class="container-fluid" style="background-color: #cecece;">
+<div class="container-fluid" style="background-color: #cecece;   background-image: url('../../assets/img/55761.jpg'); /* Adjusted path */
+  background-size: cover;
+  background-position: center;">
   <div class="row">
     <div class="col-sm-auto bg-light sticky-top">
-      <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
-        <a routerLink="/dashboard" title data-bs-toggle="tooltip" data-bs-placement="right"
-        data-bs-original-title="Icon-only">
-        <img src="https://images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg"
-          height="60px" width="60px" class="rounded-circle mt-3">
-        <span style="color: black; font-weight: 600; font-size: 27px; top: 14px; left: 12px; position: relative;">
-          Tanu </span>
-      </a>
-      <ul
-        class="nav nav-pills nav-flush flex-sm-column mt-5 flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
-        <li class="nav-item">
-          <a routerLink="/dashboard" style="color: grey;" title data-bs-toggle="tooltip" data-bs-placement="right"
-            data-bs-original-title="Home">
-            <i class="bi-house fs-3"></i>&nbsp; Dashboard
-          </a>
-        </li>
-        <li>
-          <a routerLink="/addStudent" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
-            data-bs-placement="right" data-bs-original-title="Dashboard">
-            <i class="bi bi-person-plus fs-3"></i>&nbsp;Add Student
-          </a>
-        </li>
-        <li>
-          <a routerLink="/studentList" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
-            data-bs-placement="right" data-bs-original-title="Customers">
-            <i class="bi-people fs-3"></i>&nbsp;Student List
-          </a>
-        </li>
-      
-        <li>
-          <a routerLink="/studentList" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
-            data-bs-placement="right" data-bs-original-title="Customers">
-            <i class="bi-journal-text fs-3"></i>&nbsp;Add Courses
-          </a>
-        </li>
-        <li>
-          <a routerLink="/addMark" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
-            data-bs-placement="right" data-bs-original-title="Orders" data-bs-original-title="addMark">
-            <i class="bi bi-cloud-plus fs-3"></i> &nbsp;Add Marks
-          </a>
-        </li>
-        <li>
-          <a routerLink="/studentList" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
-            data-bs-placement="right" data-bs-original-title="Customers">
-            <i class="bi-file-earmark-post fs-3"></i>&nbsp;Add Post
-          </a>
-        </li>
-        <li>
-          <a routerLink="#" class="nav-link py-3 px-3 bg-light" title data-bs-toggle="tooltip"
-            data-bs-placement="right" data-bs-original-title="Customers">
-            <i class="bi bi-clipboard fs-3"></i>&nbsp;Notice
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle bg-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <img src="https://i.imgur.com/hczKIze.jpg" width="40" class="rounded-circle">
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#" (click)="OnUserLogout()">Log out</a>
-          </div>
-        </li>
-      </ul>
+      <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center">
+        <a routerLink="/dashboard" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-original-title="Icon-only">
+          <img src="https://images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg"
+            height="60px" width="60px" class="rounded-circle mt-3">
+          <span style="color: black; font-weight: 600; font-size: 27px; top: 14px; left: 12px; position: relative;">
+            Tanu </span>
+        </a>
+        <ul
+          class="nav nav-pills nav-flush flex-sm-column mt-5 flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
+          <li class="nav-item">
+            <a routerLink="/dashboard" style="color: grey;" title="Home" data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Home">
+              <i class="bi-house fs-3"></i>&nbsp; Dashboard
+            </a>
+          </li>
+          <li>
+            <a routerLink="/addStudent" class="nav-link py-3 px-3 bg-light" title="Add Student" data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Add Student">
+              <i class="bi bi-person-plus fs-3"></i>&nbsp;Add Student
+            </a>
+          </li>
+          <li>
+            <a routerLink="/studentList" class="nav-link py-3 px-3 bg-light" title="Student List"
+              data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Student List">
+              <i class="bi-people fs-3"></i>&nbsp;Student List
+            </a>
+          </li>
+          <li>
+            <a routerLink="/addCourses" class="nav-link py-3 px-3 bg-light" title="Add Courses" data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Add Courses">
+              <i class="bi-journal-text fs-3"></i>&nbsp;Add Courses
+            </a>
+          </li>
+          <li>
+            <a routerLink="/addMark" class="nav-link py-3 px-3 bg-light" title="Add Marks" data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Add Marks">
+              <i class="bi bi-cloud-plus fs-3"></i> &nbsp;Add Marks
+            </a>
+          </li>
+          <li>
+            <a routerLink="/addPost" class="nav-link py-3 px-3 bg-light" title="Add Post" data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Add Post">
+              <i class="bi-file-earmark-post fs-3"></i>&nbsp;Add Post
+            </a>
+          </li>
+          <li>
+            <a routerLink="#" class="nav-link py-3 px-3 bg-light" title="Notice" data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-original-title="Notice">
+              <i class="bi bi-clipboard fs-3"></i>&nbsp;Notice
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="https://i.imgur.com/hczKIze.jpg" width="40" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#" (click)="OnUserLogout()">Log out</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
+    <!-- Add missing closing </div> tag -->
     <div class="col-sm p-3 min-vh-100">
       <!--add-mark content -->
       <section style="background-color: white" class="rounded-7">
@@ -90,7 +92,6 @@
                       <h3 class="mb-3">
                         {{ studentObj.first_name }} {{ studentObj.last_name }}
                       </h3>
-                      
                       <hr class="my-4" />
                       <!--radio input content -->
                       <div class="btn-group justify-content-center">
@@ -109,7 +110,6 @@
                         <input mdbRadio type="radio" class="btn-check" name="option" id="option5" value="5"
                           autocomplete="off" [(ngModel)]="mark" />
                         <label class="btn btn-dark" style="font-size: 1.5rem" for="option5">5</label>
-                       
                       </div>
                       <hr class="my-4" />
                       <div class="btn-group justify-content-center text-center">

@@ -103,8 +103,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "Student-Management:build:production",
-            "firebaseProject": "student-management-syste-c3b5e",
-            "firebaseHostingSite": "student-management-syste-c3b5e"
+            "firebaseProject": "student-management-syste-89c5b",
+            "firebaseHostingSite": "student-management-syste-89c5b"
           }
         }
       }

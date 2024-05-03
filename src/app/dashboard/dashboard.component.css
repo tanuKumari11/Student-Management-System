@@ -1,13 +1,16 @@
 .dashboard {
-    background-color: #cecece;
-  }
-  
+  background-color: #cecece;
+  background-image: url('../../assets/img/55761.jpg'); /* Adjusted path */
+  background-size: cover;
+  background-position: center;
+}
+
   .Welcome {
     text-transform: uppercase;
     font-weight: 800;
     position: relative;
     left: 10%;
-    color: #2131b1;
+    color: #fff;
   }
   
   @keyframes moveAnimation {

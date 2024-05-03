@@ -1,5 +1,7 @@
 body{
-  background-color: #f8f9fa!important
+  background-image: url('../../assets/img/55761.jpg'); /* Adjusted path */
+  background-size: cover;
+  background-position: center;
 }
 .p-4 {
   padding: 1.5rem!important;
